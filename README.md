@@ -8,7 +8,7 @@
 
 # DHT2pin
 
-Arduino library for experimental 2 pin DHT library
+Arduino library for experimental 2 pin DHT library.
 
 
 ## Description
@@ -44,3 +44,9 @@ code on a Galileo.
 
 See examples
 
+
+## Future
+
+- no active development planned
+- improve unit tests (constants)
+- 
