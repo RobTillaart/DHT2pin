@@ -64,7 +64,7 @@ unittest(test_constructor)
   assertEqualFloat(0, DHT.temperature, 0.001);
   assertEqualFloat(0, DHT.humidity, 0.001);
 
-  int chk = DHT.read22();
+  int chk = DHT.read();
   //  Nothing connected so timeout expected
   assertEqual(DHTLIB_ERROR_TIMEOUT, chk);
 
