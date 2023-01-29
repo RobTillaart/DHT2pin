@@ -46,10 +46,10 @@ unittest(test_constants)
   assertEqual(-2, DHTLIB_ERROR_TIMEOUT);
   assertEqual(-3, DHTLIB_ERROR_CONNECT);
   assertEqual(-4, DHTLIB_ERROR_ACK_L);
-  assertEqual(-9, DHTLIB_ERROR_ACK_H);
+  assertEqual(-5, DHTLIB_ERROR_ACK_H);
   assertEqual(-999, DHTLIB_INVALID_VALUE);
 
-  assertEqual(10, DHTLIB_DHT11_WAKEUP);
+  assertEqual(18, DHTLIB_DHT11_WAKEUP);
   assertEqual(01, DHTLIB_DHT_WAKEUP);
 
   //  just printing.
