@@ -61,16 +61,16 @@ unittest(test_constructor)
 {
   DHT2pin DHT(2, 3);
 
-  assertEqualFloat(0, DHT.temperature, 0.001);
-  assertEqualFloat(0, DHT.humidity, 0.001);
+  assertEqualFloat(0, DHT.temperature(), 0.001);
+  assertEqualFloat(0, DHT.humidity(), 0.001);
 
   int chk = DHT.read();
   //  Nothing connected so timeout expected
   assertEqual(DHTLIB_ERROR_TIMEOUT, chk);
 
   //  This will set the temperature and humidity to -999
-  assertEqualFloat(-999, DHT.temperature, 0.001);
-  assertEqualFloat(-999, DHT.humidity, 0.001);
+  assertEqualFloat(-999, DHT.temperature(), 0.001);
+  assertEqualFloat(-999, DHT.humidity(), 0.001);
 }
 
 
